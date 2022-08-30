@@ -14,7 +14,8 @@
     "docker-amd64-local": "docker buildx build --platform linux/amd64 --load .  -t advplyr/audiobookshelf-amd64-local",
     "docker-arm64-local": "docker buildx build --platform linux/arm64 --load .  -t advplyr/audiobookshelf-arm64-local",
     "docker-armv7-local": "docker buildx build --platform linux/arm/v7 --load .  -t advplyr/audiobookshelf-armv7-local",
-    "deploy": "node dist/autodeploy"
+    "deploy": "node dist/autodeploy",
+    "tauri": "tauri"
   },
   "bin": "prod.js",
   "pkg": {
@@ -36,5 +37,8 @@
     "htmlparser2": "^8.0.1",
     "socket.io": "^4.4.1",
     "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.5"
   }
 }
